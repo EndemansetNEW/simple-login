@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="./css/login.css">
+        <link rel="stylesheet" href="" id="dark_mode">
+        <script src="./js/base.js"></script>
+    </head>
+    <body class="center" oncontextmenu="self.event.returnValue=false"; οndragstart="return false"; onselectstart="return false"; onload="setMode()">
+        <div class="loginbox">
+            <img src="./res/img/head.jpg" class="header-icon">
+            <h1>Sign in</h1>
+            <form action="login.php" method="POST">
+                <input type="text" autocomplete="off">
+                <input type="password" autocomplete="off">
+                <button>Log in</button>
+            </form>
+            <span>Don't have an account? <a href="#">Sign up</a></span>
+        </div>
+        <button onclick="switchMode()" class="darkmode"></button>
+    </body>
+</html>
